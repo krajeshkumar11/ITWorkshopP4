@@ -1,0 +1,329 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	  <title>Bootstrap Example</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="js/FileSaver.js"></script>
+	</head>
+	<script type="text/javascript">
+		function loadCountryData(loadCountryDataId) {
+			// let loadCountryDataId = document.getElementById("loadCountryData").value;
+			
+			console.log(loadCountryDataId);
+			
+			iframeid = "htmlFileData";
+			document.getElementById(iframeid).src =  "data/"+ loadCountryDataId;
+		}
+	</script>
+	<style type="text/css">
+		.list-group{
+		    max-height: 300px;
+		    margin-bottom: 10px;
+		    overflow:scroll;
+		    -webkit-overflow-scrolling: touch;
+		}
+	</style>
+	<body>
+	<div class="jumbotron text-center">
+	  <h1>Parameters To Choose Where To Release Self Driving Cars First</h1>
+	</div>
+	<div class="container">
+	  <div class="row">
+	    <div class="col-sm-4">
+	    	<h3>Country List</h3>
+	    	<div class="panel-body">
+				<ul class="list-group">
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Afghanistan.html">Afghanistan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Albania.html">Albania</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Algeria.html">Algeria</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="American Samoa.html">American Samoa</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Andorra.html">Andorra</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Angola.html">Angola</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Antigua and Barbuda.html">Antigua and Barbuda</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Arab World.html">Arab World</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Argentina.html">Argentina</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Armenia.html">Armenia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Aruba.html">Aruba</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Australia.html">Australia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Austria.html">Austria</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Azerbaijan.html">Azerbaijan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Bahamas.html">Bahamas</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Bahrain.html">Bahrain</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Bangladesh.html">Bangladesh</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Barbados.html">Barbados</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Belarus.html">Belarus</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Belgium.html">Belgium</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Belize.html">Belize</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Benin.html">Benin</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Bermuda.html">Bermuda</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Bhutan.html">Bhutan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Bolivia.html">Bolivia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Bosnia and Herzegovina.html">Bosnia and Herzegovina</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Botswana.html">Botswana</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Brazil.html">Brazil</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="British Virgin Islands.html">British Virgin Islands</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Brunei.html">Brunei</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Bulgaria.html">Bulgaria</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Burkina Faso.html">Burkina Faso</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Burundi.html">Burundi</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Cambodia.html">Cambodia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Cameroon.html">Cameroon</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Canada.html">Canada</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Cape Verde.html">Cape Verde</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Caribbean small states.html">Caribbean small states</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Cayman Islands.html">Cayman Islands</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Central African Republic.html">Central African Republic</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Central Europe and the Baltics.html">Central Europe and the Baltics</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Chad.html">Chad</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Chile.html">Chile</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="China.html">China</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Colombia.html">Colombia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Comoros.html">Comoros</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Congo.html">Congo</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Costa Rica.html">Costa Rica</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Cote d'Ivoire.html">Cote d'Ivoire</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Croatia.html">Croatia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Cuba.html">Cuba</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Curacao.html">Curacao</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Cyprus.html">Cyprus</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Czechia.html">Czechia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Czechoslovakia.html">Czechoslovakia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Democratic Republic of Congo.html">Democratic Republic of Congo</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Denmark.html">Denmark</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Djibouti.html">Djibouti</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Dominica.html">Dominica</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Dominican Republic.html">Dominican Republic</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Early-demographic dividend.html">Early-demographic dividend</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="East Asia & Pacific (excluding high income).html09:40:30">East Asia & Pacific (excluding high income).html09:40</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="East Asia & Pacific (IDA & IBRD).html">East Asia & Pacific (IDA & IBRD)</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="East Asia & Pacific.html">East Asia & Pacific</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="East Asia.html">East Asia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Eastern Europe.html">Eastern Europe</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Ecuador.html">Ecuador</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Egypt.html">Egypt</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="El Salvador.html">El Salvador</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Equatorial Guinea.html">Equatorial Guinea</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Eritrea.html">Eritrea</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Estonia.html">Estonia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Eswatini.html">Eswatini</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Ethiopia.html">Ethiopia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Euro area.html">Euro area</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Europe & Central Asia (excluding high income).html09:40:29">Europe & Central Asia (excluding high income).html09:40</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Europe & Central Asia (IDA & IBRD).html">Europe & Central Asia (IDA & IBRD)</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Europe & Central Asia.html">Europe & Central Asia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Europe.html">Europe</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="European Union.html">European Union</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Faeroe Islands.html">Faeroe Islands</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Fiji.html">Fiji</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Finland.html">Finland</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Former USSR.html">Former USSR</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Former Yugoslavia.html">Former Yugoslavia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Fragile and conflict affected situations.html09:40:30">Fragile and conflict affected situations.html09:40</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="France.html">France</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="French Polynesia.html">French Polynesia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Gabon.html">Gabon</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Gambia.html">Gambia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Georgia.html">Georgia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Germany.html">Germany</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Ghana.html">Ghana</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Gibraltar.html">Gibraltar</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Greece.html">Greece</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Greenland.html">Greenland</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Grenada.html">Grenada</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Guam.html">Guam</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Guatemala.html">Guatemala</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Guinea-Bissau.html">Guinea-Bissau</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Guinea.html">Guinea</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Guyana.html">Guyana</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Haiti.html">Haiti</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Heavily indebted poor countries (HIPC).html">Heavily indebted poor countries (HIPC)</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="High income.html">High income</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Honduras.html">Honduras</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Hong Kong.html">Hong Kong</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Hungary.html">Hungary</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="IBRD only.html">IBRD only</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Iceland.html">Iceland</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="IDA & IBRD total.html">IDA & IBRD total</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="IDA blend.html">IDA blend</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="IDA only.html">IDA only</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="IDA total.html">IDA total</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="India.html">India</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Indonesia.html">Indonesia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Iran.html">Iran</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Iraq.html">Iraq</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Ireland.html">Ireland</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Isle of Man.html">Isle of Man</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Israel.html">Israel</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Italy.html">Italy</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Jamaica.html">Jamaica</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Japan.html">Japan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Jordan.html">Jordan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Kazakhstan.html">Kazakhstan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Kenya.html">Kenya</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Kiribati.html">Kiribati</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Kuwait.html">Kuwait</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Kyrgyzstan.html">Kyrgyzstan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Laos.html">Laos</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Late-demographic dividend.html">Late-demographic dividend</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Latin America & Caribbean (excluding high income).html2021, 09:40:30">Latin America & Caribbean (excluding high income).html2021, 09:40</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Latin America & Caribbean (IDA & IBRD).html">Latin America & Caribbean (IDA & IBRD)</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Latin America & Caribbean.html">Latin America & Caribbean</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Latin America.html">Latin America</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Latvia.html">Latvia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Least developed countries: UN classification.html09:40:30">Least developed countries: UN classification.html09:40</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Lebanon.html">Lebanon</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Lesotho.html">Lesotho</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Liberia.html">Liberia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Libya.html">Libya</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Liechtenstein.html">Liechtenstein</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Lithuania.html">Lithuania</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Low & middle income.html">Low & middle income</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Low income.html">Low income</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Lower middle income.html">Lower middle income</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Luxembourg.html">Luxembourg</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Macao.html">Macao</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Madagascar.html">Madagascar</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Malawi.html">Malawi</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Malaysia.html">Malaysia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Maldives.html">Maldives</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Mali.html">Mali</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Malta.html">Malta</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Marshall Islands.html">Marshall Islands</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Mauritania.html">Mauritania</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Mauritius.html">Mauritius</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Mexico.html">Mexico</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Micronesia (country).html">Micronesia (country)</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Middle East & North Africa (excluding high income).html2021, 09:40:30">Middle East & North Africa (excluding high income).html2021, 09:40</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Middle East & North Africa (IDA & IBRD).html09:40:30">Middle East & North Africa (IDA & IBRD).html09:40</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Middle East & North Africa.html">Middle East & North Africa</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Middle East.html">Middle East</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Middle income.html">Middle income</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Moldova.html">Moldova</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Monaco.html">Monaco</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Mongolia.html">Mongolia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Montenegro.html">Montenegro</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Morocco.html">Morocco</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Mozambique.html">Mozambique</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Myanmar.html">Myanmar</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Namibia.html">Namibia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Nauru.html">Nauru</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Nepal.html">Nepal</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Netherlands.html">Netherlands</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="New Caledonia.html">New Caledonia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="New Zealand.html">New Zealand</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Nicaragua.html">Nicaragua</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Niger.html">Niger</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Nigeria.html">Nigeria</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="North America.html">North America</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="North Korea.html">North Korea</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="North Macedonia.html">North Macedonia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Northern Mariana Islands.html">Northern Mariana Islands</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Norway.html">Norway</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="OECD members.html">OECD members</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Oman.html">Oman</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Other small states.html">Other small states</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Pacific island small states.html">Pacific island small states</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Pakistan.html">Pakistan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Palau.html">Palau</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Palestine.html">Palestine</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Panama.html">Panama</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Papua New Guinea.html">Papua New Guinea</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Paraguay.html">Paraguay</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Peru.html">Peru</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Philippines.html">Philippines</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Poland.html">Poland</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Portugal.html">Portugal</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Post-demographic dividend.html">Post-demographic dividend</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Pre-demographic dividend.html">Pre-demographic dividend</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Puerto Rico.html">Puerto Rico</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Qatar.html">Qatar</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Romania.html">Romania</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Russia.html">Russia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Rwanda.html">Rwanda</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Saint Kitts and Nevis.html">Saint Kitts and Nevis</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Saint Lucia.html">Saint Lucia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Saint Martin (French part).html">Saint Martin (French part)</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Saint Vincent and the Grenadines.html">Saint Vincent and the Grenadines</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Samoa.html">Samoa</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="San Marino.html">San Marino</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sao Tome and Principe.html">Sao Tome and Principe</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Saudi Arabia.html">Saudi Arabia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Senegal.html">Senegal</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Serbia.html">Serbia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Seychelles.html">Seychelles</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sierra Leone.html">Sierra Leone</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Singapore.html">Singapore</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sint Maarten (Dutch part).html">Sint Maarten (Dutch part)</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Slovakia.html">Slovakia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Slovenia.html">Slovenia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Small states.html">Small states</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Solomon Islands.html">Solomon Islands</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Somalia.html">Somalia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="South Africa.html">South Africa</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="South and South-East Asia.html">South and South-East Asia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="South Asia (IDA & IBRD).html">South Asia (IDA & IBRD)</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="South Asia.html">South Asia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="South Korea.html">South Korea</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="South Sudan.html">South Sudan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Spain.html">Spain</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sri Lanka.html">Sri Lanka</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sub-Sahara Africa.html">Sub-Sahara Africa</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sub-Saharan Africa (excluding high income).html09:40:30">Sub-Saharan Africa (excluding high income).html09:40</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sub-Saharan Africa (IDA & IBRD).html">Sub-Saharan Africa (IDA & IBRD)</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sub-Saharan Africa.html">Sub-Saharan Africa</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sudan.html">Sudan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Suriname.html">Suriname</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Sweden.html">Sweden</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Switzerland.html">Switzerland</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Syria.html">Syria</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Syrian Arab Republic.html">Syrian Arab Republic</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Taiwan.html">Taiwan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Tajikistan.html">Tajikistan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Tanzania.html">Tanzania</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Thailand.html">Thailand</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Timor.html">Timor</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Togo.html">Togo</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Tonga.html">Tonga</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Trinidad and Tobago.html">Trinidad and Tobago</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Tunisia.html">Tunisia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Turkey.html">Turkey</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Turkmenistan.html">Turkmenistan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Turks and Caicos Islands.html">Turks and Caicos Islands</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Uganda.html">Uganda</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Ukraine.html">Ukraine</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="United Arab Emirates.html">United Arab Emirates</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="United Kingdom.html">United Kingdom</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="United States Virgin Islands.html">United States Virgin Islands</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="United States.html">United States</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Upper middle income.html">Upper middle income</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Uruguay.html">Uruguay</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Uzbekistan.html">Uzbekistan</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Vanuatu.html">Vanuatu</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Venezuela.html">Venezuela</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Vietnam.html">Vietnam</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Western Europe.html">Western Europe</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Western Offshoots.html">Western Offshoots</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="World.html">World</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Yemen.html">Yemen</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Zambia.html">Zambia</button></li>
+					<li><button id="loadCountryData" onclick="loadCountryData(value)" type="button" class="btn" value="Zimbabwe.html">Zimbabwe</button></li>
+					</ul>		
+			</div>
+	    </div>
+	    <div class="col-sm-8">
+	      <h3>Country Details</h3>
+	      <iframe src="" id="htmlFileData" name="targetframe" allowTransparency="true" scrolling="yes" frameborder="0" class="col-sm-12" height=600>
+    	  </iframe>
+	    </div>
+	  </div>
+	</div>
+	</body>
+	</html>
+	
